@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.light {
+  background-color: #f4f4f4;
+  color: black;
+}
+
+.container {
+  max-width: 1000px; margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.theme-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark .card {
+  background-color: #1e1e1e;
+}
+
+.section-title {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.workout-item {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dark .workout-item {
+  background-color: #2a2a2a;
+}
+
+.delete-btn {
+  background-color: crimson;
+}
+
+.bmi-result {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
